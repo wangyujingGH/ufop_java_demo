@@ -1,0 +1,6 @@
+image: ubuntu
+build_script:
+    - sudo mv $RESOURCE/* .
+    - sudo apt-get update
+    - sudo apt-get install -y openjdk-7-jre
+run: java -jar java_repo.jar
